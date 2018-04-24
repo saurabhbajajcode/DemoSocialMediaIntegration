@@ -14,7 +14,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginOptionsViewController" customModule="DemoSocialMediaIntegration" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="LoginOptionsView" customModule="DemoSocialMediaIntegration" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -29,9 +29,11 @@
                             <constraint firstItem="M8M-6S-m2S" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JCd-h4-6tB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outlet property="fbLoginButton" destination="M8M-6S-m2S" id="F8x-0S-Hyw"/>
+                        </connections>
                     </view>
                     <connections>
-                        <outlet property="fbLoginButton" destination="M8M-6S-m2S" id="H6W-dk-9PN"/>
                         <segue destination="58F-qI-j2i" kind="show" identifier="showHome" id="TLb-NC-Bao"/>
                     </connections>
                 </viewController>

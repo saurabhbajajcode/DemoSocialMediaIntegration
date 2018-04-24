@@ -20,6 +20,7 @@
 		D0B31D88208F38630064502A /* LoginOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B31D87208F38630064502A /* LoginOptionsViewController.swift */; };
 		D0B31D8B208F3E980064502A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B31D8A208F3E980064502A /* HomeViewController.swift */; };
 		D0B31D8D208F51650064502A /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B31D8C208F51650064502A /* AppManager.swift */; };
+		D0B31D8F208F61FD0064502A /* LoginOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B31D8E208F61FD0064502A /* LoginOptionsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		D0B31D87208F38630064502A /* LoginOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOptionsViewController.swift; sourceTree = "<group>"; };
 		D0B31D8A208F3E980064502A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D0B31D8C208F51650064502A /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		D0B31D8E208F61FD0064502A /* LoginOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOptionsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				D0B31D87208F38630064502A /* LoginOptionsViewController.swift */,
+				D0B31D8E208F61FD0064502A /* LoginOptionsView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -495,6 +498,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0B31D88208F38630064502A /* LoginOptionsViewController.swift in Sources */,
+				D0B31D8F208F61FD0064502A /* LoginOptionsView.swift in Sources */,
 				D0B31D8D208F51650064502A /* AppManager.swift in Sources */,
 				D046EFAF208DFDCF00071F7C /* AppDelegate.swift in Sources */,
 				D046EFB7208DFDCF00071F7C /* DemoSocialMediaIntegration.xcdatamodeld in Sources */,

@@ -8,16 +8,24 @@
 
 import UIKit
 import FBSDKLoginKit
+import FBSDKCoreKit
 
 class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
-        FBSDKProfile.loadCurrentProfile { (profile, error) in
-            print(profile?.name!)
+        
+        // get email and gender from facebook
+        let connection = FBSDKGraphRequestConnection()
+        let graphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "name, email"])
+        connection.add(graphRequest) { (connection, response, error) in
+            print("Facebook graph result: ", response!)
+            if let profileDict = response as? [String: AnyObject] {
+                (self.view as? HomeView)?.setDataSource(dataSource: profileDict)
+            }
         }
+        connection.start()
     }
 
     override func didReceiveMemoryWarning() {

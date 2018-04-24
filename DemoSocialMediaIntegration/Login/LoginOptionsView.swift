@@ -13,6 +13,7 @@ class LoginOptionsView: UIView {
     @IBOutlet weak var fbLoginButton: FBSDKLoginButton!
     
     override func awakeFromNib() {
+        super.awakeFromNib()
         setupSubviews()
     }
     

@@ -18,6 +18,8 @@
 		D046EFC7208DFDD700071F7C /* DemoSocialMediaIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046EFC6208DFDD700071F7C /* DemoSocialMediaIntegrationTests.swift */; };
 		D046EFD2208DFDD800071F7C /* DemoSocialMediaIntegrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046EFD1208DFDD800071F7C /* DemoSocialMediaIntegrationUITests.swift */; };
 		D0B31D88208F38630064502A /* LoginOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B31D87208F38630064502A /* LoginOptionsViewController.swift */; };
+		D0B31D8B208F3E980064502A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B31D8A208F3E980064502A /* HomeViewController.swift */; };
+		D0B31D8D208F51650064502A /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B31D8C208F51650064502A /* AppManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		D0AB0C3D208F25BB00250AA0 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0AB0C3F208F25BB00250AA0 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0B31D87208F38630064502A /* LoginOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOptionsViewController.swift; sourceTree = "<group>"; };
+		D0B31D8A208F3E980064502A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D0B31D8C208F51650064502A /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,13 +135,15 @@
 		D046EFAD208DFDCF00071F7C /* DemoSocialMediaIntegration */ = {
 			isa = PBXGroup;
 			children = (
-				D0B31D86208F38380064502A /* Home  */,
+				D0B31D89208F3E830064502A /* Home */,
+				D0B31D86208F38380064502A /* Login */,
 				D046EFAE208DFDCF00071F7C /* AppDelegate.swift */,
 				D046EFB2208DFDCF00071F7C /* Main.storyboard */,
 				D046EFB8208DFDD700071F7C /* Assets.xcassets */,
 				D046EFBA208DFDD700071F7C /* LaunchScreen.storyboard */,
 				D046EFBD208DFDD700071F7C /* Info.plist */,
 				D046EFB5208DFDCF00071F7C /* DemoSocialMediaIntegration.xcdatamodeld */,
+				D0B31D8C208F51650064502A /* AppManager.swift */,
 			);
 			path = DemoSocialMediaIntegration;
 			sourceTree = "<group>";
@@ -172,12 +178,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D0B31D86208F38380064502A /* Home  */ = {
+		D0B31D86208F38380064502A /* Login */ = {
 			isa = PBXGroup;
 			children = (
 				D0B31D87208F38630064502A /* LoginOptionsViewController.swift */,
 			);
-			path = "Home ";
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D0B31D89208F3E830064502A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D0B31D8A208F3E980064502A /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -481,8 +495,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0B31D88208F38630064502A /* LoginOptionsViewController.swift in Sources */,
+				D0B31D8D208F51650064502A /* AppManager.swift in Sources */,
 				D046EFAF208DFDCF00071F7C /* AppDelegate.swift in Sources */,
 				D046EFB7208DFDCF00071F7C /* DemoSocialMediaIntegration.xcdatamodeld in Sources */,
+				D0B31D8B208F3E980064502A /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

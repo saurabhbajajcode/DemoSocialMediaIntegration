@@ -1,5 +1,5 @@
 //
-//  LoginOptionsViewController.swift
+//  HomeViewController.swift
 //  DemoSocialMediaIntegration
 //
 //  Created by Macbook Air on 24/04/18.
@@ -7,13 +7,17 @@
 //
 
 import UIKit
+import FBSDKLoginKit
 
-class LoginOptionsViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        FBSDKProfile.loadCurrentProfile { (profile, error) in
+            print(profile?.name!)
+        }
     }
 
     override func didReceiveMemoryWarning() {

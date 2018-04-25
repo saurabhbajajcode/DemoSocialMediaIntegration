@@ -53,15 +53,20 @@ class LoginOptionsViewController: UIViewController {
     /// adds observer for FBSDKAccessTokenDidChange notification and handles user change
     private func registerForFacebookTokenChange() {
         NotificationCenter.default.addObserver(forName: NSNotification.Name.FBSDKAccessTokenDidChange, object: nil, queue: OperationQueue.main) { (notification) in
-            print(notification.userInfo!)
-            if notification.userInfo?[FBSDKAccessTokenDidChangeUserID] as? Bool == true {
-                // handle user change
-                if (FBSDKAccessToken.current() != nil) {
-                    self.showHomeScreen()
-                } else {
-                    // logout
-                    
-                }
+            self.fbAccessTokenDidChange(notification: notification)
+        }
+    }
+    
+    // MARK: callbacks
+    private func fbAccessTokenDidChange(notification: Notification) {
+        print(notification.userInfo!)
+        if notification.userInfo?[FBSDKAccessTokenDidChangeUserID] as? Bool == true {
+            // handle user change
+            if (FBSDKAccessToken.current() != nil) {
+                self.showHomeScreen()
+            } else {
+                // logout
+                
             }
         }
     }

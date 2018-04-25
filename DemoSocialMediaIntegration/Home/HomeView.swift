@@ -39,6 +39,8 @@ class HomeView: UIView {
         }
         if let profileId = dataSource["id"] as? String {
             self.profilePictureView.profileID = profileId
+            self.profilePictureView.pictureMode = .normal
+            self.profilePictureView.clipsToBounds = true
         }
     }
 }
